@@ -1,0 +1,443 @@
+
+/*链接四种样式*/
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/*bootstrap 4 is coming顶部容器*/                                 /*顶部bootstrap4提示*/
+.boot4-container {
+	width: 100%;
+	background-color:#0275D8 ;
+	height: 50px;
+}
+
+/*bootstrap 4 is coming文字样式*/
+.boot4-text {
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*鼠标停留顶部bootstrap4 is coming后，背景色样式(文字样式默认一直是白色)*/
+.boot4-container:hover {
+	background-color: #0269C2;
+}
+
+/*顶部nav导航条容器*/                                                     /*顶部导航栏*/
+.nav-container {
+	width: 100%;
+	min-height: 50px;
+	background-color: #FFFFFF;          
+}
+
+/*顶部nav导航条内的文字样式*/
+.nav-container a {
+	color: #9A3D7C;
+}
+
+/*巨幕容器样式*/                                                       /*巨幕部分*/
+.jumbotron {
+	background-color: #583E7E;	
+	height: 724px;
+}
+/*巨幕在屏幕小于768宽时的高度样式*/
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    height: 630px;
+  }
+}
+/*巨幕在屏幕小于350宽时的高度样式*/
+@media screen and (max-width: 350px) {
+  .jumbotron {
+    height: 650px;
+  }
+}
+/*巨幕在屏幕小于329宽时的高度样式*/
+@media screen and (max-width: 329px) {
+  .jumbotron {
+    height: 700px;
+  }
+}
+/*巨幕在屏幕小于315宽时的高度样式*/
+@media screen and (max-width: 315px) {
+  .jumbotron {
+    height: 730px;
+  }
+}
+/*巨幕在屏幕小于305宽时的高度样式*/
+@media screen and (max-width: 305px) {
+  .jumbotron {
+    height:800px;
+  }
+}
+.jub-B {
+	width: 143px;
+	height: 143px;
+	font-size: 108px;
+	color: #FFFFFF;
+	border: 1px solid #CDBFE3;
+	border-radius: 15%;
+	cursor: default;
+	text-align: center;
+	line-height: 140px;
+	margin: 30px auto;
+	display: block;
+	/*设置宽度就是实际宽度，padding和border包含宽高 content-box不包括*/
+	box-sizing: border-box;         
+}
+
+/*重新写lead类属性，B图标下的文字使用*/
+.jumbotron p.lead {
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.jumbotron p.lead {
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+/*巨幕下载按钮样式*/
+.btn-download-bt-sty {
+	font-size: 20px;
+	border: 1px solid #CDBFE3;
+	padding: 15px 35px;
+	box-sizing: border-box;
+	margin: 18px auto 0;
+	/*屏幕宽度小于480px是按钮宽度100%*/
+	width: 100%;
+}
+@media (min-width:480px) {
+	/*当屏幕宽度大于480px时，按钮宽度自动*/
+	.btn-download-bt-sty {
+		width:auto;
+	}
+}
+/*巨幕按钮活动样式*/
+.btn-download-bt-sty:hover,
+.btn-download-bt-sty:focus,
+.btn-download-bt-sty:active {
+	background-color: #FFFFFF;
+	color: #583E7E;
+}
+
+/*download Bootstrap版本样式*/
+.version {
+	color: #9781B6;
+	text-align: center;
+}
+/*版本文字大小*/
+.jumbotron p.version {
+	font-size: 14px;
+}
+
+/*屏幕小于480px时巨幕底部图片文字模块*/
+.jumbotron-pic {
+	border-top: 1px solid #866AB3;
+	width: 100%;
+	margin-top: 30px;
+	position: relative;
+}
+/*屏幕大于480px时巨幕底部图片文字模块样式 */
+@media (min-width:480px) {
+	.jumbotron-pic{
+		border: 1px solid #866AB3;
+	    width: 329px;
+		height: 130px;
+		border-radius: 5px;
+		margin-top: 50px;
+		position: relative;
+	}
+}
+
+/*该图片容器的大小*/
+.jumbotron-container-img {
+	width: 130px;
+	height: 100px;
+	display: inline-block;
+	margin: 16px 5px;
+}
+
+/*该图片完全撑在图片容器内*/
+.jumbotron-container-img img {
+	width: 100%;
+	height: auto;
+}
+
+/*巨幕底部模块文字*/
+.jumbotron-container-text {
+	display: inline-block;
+	position: absolute;
+	margin: 17px 10px 5px;
+	font-size: 12px;
+
+}
+
+/*巨幕底部标签*/
+.jumbotron-container-tag {
+	display: inline-block;
+	position: absolute;
+	bottom: 15px;
+	margin: 0 10px;
+}
+/*屏幕小于350px时，巨幕底部标签*/
+@media (max-width:350px) {
+	.jumbotron-container-tag {
+		bottom: 0px;
+	}
+}
+/*屏幕小于329px时，巨幕底部标签*/
+@media (max-width:329px) {
+	.jumbotron-container-tag {
+		bottom: -20px;
+	}
+}
+/*屏幕小于315px时，巨幕底部标签*/
+@media (max-width:315px) {
+	.jumbotron-container-tag {
+		bottom: -55px;
+	}
+}
+/*屏幕小于305px时，巨幕底部标签*/
+@media (max-width:305px) {
+	.jumbotron-container-tag {
+		bottom: -100px;
+	}
+}
+
+/*底部small标签里文字样式*/
+.jumbotron-container-tag>small {
+	color: #ACB3E3;
+}
+
+/*designed模块样式*/                       /*中间Designed for everyone, everywhere部分*/
+.designed {
+	text-align:center;
+	padding:70px 0 100px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+/*h2标题样式*/
+.designed-h2-title {
+	font-size: 40px;
+}
+
+/*h2标题下p标签样式*/
+.designed-h2-title+p {
+	font-size: 21px;
+	max-width: 80%;
+	color: #55556F;
+	margin: 0 auto;
+}
+
+/*屏幕宽度小于768时样式*/
+@media (max-width:768px){
+	.designed {
+		padding: 10px 0 40px;
+	}
+	.designed-h2-title {
+		font-size: 30px;
+	}
+	.designed-h2-title+p {
+		font-size: 16px;
+		max-width: 100%;
+	}
+}
+
+/*designed栅格图片文字中p标签字体样式*/
+.designed .container .col-sm-4>p {
+	font-size: 16px;
+}
+
+/*底部bootstrap说明*/
+.designed-bt-ins {
+	color: #7A5555;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*底部按钮View the Github project*/
+a.designed-bottom-btn {
+	color: #563D90;
+	border: 1px solid #563D90;
+	background-color: transparent;
+	margin-top: 20px;
+}
+/*鼠标移入底部按钮后*/
+a.designed-bottom-btn:hover {
+	color: #FFFFFF;
+	background-color: #563D90;
+}
+
+/*Official Bootstrap Themes图文区域容器*/                    /*Official Bootstrap Themes图文区域*/
+.official {
+	padding: 100px 0;
+	text-align: center;
+	border-bottom: 1px solid #E5E5E5;
+	
+}
+
+/*official模块h2*/
+.official-h2-title {
+	font-size: 40px;
+}
+
+/*h2标题下p标签样式*/
+.official-h2-title+p {
+	font-size: 21px;
+	max-width: 80%;
+	color: #55556F;
+	margin: 0 auto;
+}
+
+/*屏幕宽度小于768时样式*/
+@media (max-width:768px){
+	.official {
+		padding: 40px 0;
+	}
+	.official-h2-title {
+	font-size: 30px;
+	}
+	.official-h2-title+p {
+	font-size: 16px;
+	max-width: 100%;
+	}
+}
+
+/*底部按钮Browse themes*/
+a.official-bottom-btn {
+	color: #563D90;
+	border: 1px solid #563D90;
+	background-color: transparent;
+	margin: 20px 0;
+}
+/*鼠标移入底部按钮后*/
+a.official-bottom-btn:hover {
+	color: #FFFFFF;
+	background-color: #563D90;
+}
+
+/*Built with Bootstrap图文区域容器*/                        /*Built with Bootstrap图文区域*/
+.built {
+	padding: 100px 0;
+	text-align: center;
+	border-bottom: 1px solid #E5E5E5;
+}
+/*h2样式*/
+.built-h2-title {
+	font-size: 40px;
+}
+
+/*p样式*/
+.built p.lead {
+	font-size: 21px;
+	max-width: 80%;
+	color: #55556F;
+	margin: 0 auto;
+}
+
+/*屏幕宽度小于768时样式*/
+@media (max-width:768px) {
+	.built {
+		padding: 40px 0;
+	}
+	.built-h2-title {
+	font-size: 30px;
+	}
+	.built p.lead {
+	font-size: 16px;
+	max-width: 100%;
+	}
+}
+
+/*built内栅格图片*/
+.built-col-left,
+.built-col-right {
+	padding: 1px;
+}
+
+/*built内底部按钮*/
+a.built-bottom-btn {
+	color: #563D90;
+	border: 1px solid #563D90;
+	background-color: transparent;
+	margin: 20px 0;
+	margin-bottom: 0;
+}
+a.built-bottom-btn:hover {
+	color: #FFFFFF;
+	background-color: #563D90;
+}
+
+/*底部页脚容器*/                                               /*底部页脚*/
+footer {
+	background-color:#2A2730 ;
+	height: 200px;
+}
+
+/*底部页脚container*/
+.footer-container {
+	padding-top: 50px;
+}
+
+/*底部页脚文字p*/
+.footer-container>p {
+	color: #99979C;
+}
+
+/*底部页脚第一个p*/
+.footer-container ul+p {
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+
+/*屏幕小于270px底部页脚样式*/
+@media (max-width:270px ) {
+	footer {
+		height: 250px;
+	}
+}
+
+/*蓝色字体链接专用id*/                                               /*通用*/
+#font-blue {
+	color: #337AB7;
+	text-decoration: none;
+}
+
+#font-blue:visited {
+	color: #337AB7;
+	text-decoration: none;
+}
+#font-blue:hover {
+	color: #337AB7;
+	text-decoration:underline;
+}
+#font-blue:active {
+	color: #337AB7;
+	text-decoration: none;
+}
+#font-blue:focus {
+	color: #337AB7;
+	border: 1px solid #337AB7;
+}
+
+/*小横线*/
+.designed-hr {
+	width: 100px;
+	margin: 40px auto;
+}
